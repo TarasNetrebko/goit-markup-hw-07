@@ -1,3 +1,6 @@
+//UTILS
+@import './utils/hidden';
+@import './utils/vars';
 //BASE
 @import './base/common';
 @import './base/reset';
@@ -16,6 +19,3 @@
 @import './layout/paculiarities';
 @import './layout/portfolio';
 @import './layout/team';
-//UTILS
-@import './utils/hidden';
-@import './utils/vars';

@@ -35,25 +35,29 @@ textarea:focus {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.social-list {
-  display: flex;
-  justify-content: center;
-}
-.social-icon {
-  transition-duration: 0ms;
-  width: 20px;
-  height: 20px;
-}
-.social-item + .social-item {
-  margin-left: 10px;
-}
-.social-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+.social {
+  &-list {
+    display: flex;
+    justify-content: center;
+  }
+  &-icon {
+    transition-duration: 0ms;
+    width: 20px;
+    height: 20px;
+  }
+  &-item {
+    & + & {
+      margin-left: 10px;
+    }
+  }
+  &-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 //LOGO
@@ -64,29 +68,28 @@ textarea:focus {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-}
-.header-logo {
-  margin-right: 93px;
-}
-.footer-logo {
-  display: block;
-  margin-bottom: 20px;
+  &-header {
+    margin-right: 93px;
+  }
+  &-footer {
+    display: block;
+    margin-bottom: 20px;
 
-  color: var(--white-color);
-}
-.logo-accent {
-  color: var(--accent-color);
+    color: var(--white-color);
+  }
+  &-accent {
+    color: var(--accent-color);
+  }
 }
 
 //LIST
 
 .list {
   list-style: none;
-}
-.list-title {
-  margin: 0 auto;
-
-  color: var(--secondary-text-color);
+  &-title {
+    margin: 0 auto;
+    color: var(--secondary-text-color);
+  }
 }
 //LINK
 
@@ -96,16 +99,18 @@ textarea:focus {
 
 //BUTTONS
 
-.btn-primary {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-  border: none;
-}
-.btn-secondary {
-  border: 1px solid transparent;
+.btn {
+  &-primary {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: none;
+  }
+  &-secondary {
+    border: 1px solid transparent;
 
-  color: var(--secondary-text-color);
-  background-color: var(--secondary-background-color);
-  cursor: pointer;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+    cursor: pointer;
+  }
 }

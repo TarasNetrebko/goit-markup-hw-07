@@ -1,45 +1,46 @@
-.team-section {
-  background-color: var(--secondary-background-color);
-}
-.team-list {
-  display: flex;
-  margin-top: 50px;
-}
-.team-card {
-  box-shadow: var(--card-shadow);
-}
-.team-card-discription {
-  display: flex;
-  flex-direction: column;
-  width: 270px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+.team {
+  &-section {
+    background-color: var(--secondary-background-color);
+  }
+  &-list {
+    display: flex;
+    margin-top: 50px;
+  }
+  &-card {
+    box-shadow: var(--card-shadow);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &-discription {
+      display: flex;
+      flex-direction: column;
+      width: 270px;
+      padding-bottom: 30px;
+      padding-top: 30px;
 
-  /*box-shadow: var(--card-shadow);*/
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--white-color);
-}
-.team-card:not(:last-child) {
-  margin-right: 30px;
-}
-.teammember {
-  margin-bottom: 10px;
+      border-radius: 0px 0px 4px 4px;
+      background-color: var(--white-color);
+    }
+  }
+  &member {
+    margin-bottom: 10px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  &-social-link {
+    background-color: var(--white-color);
+    color: var(--social-icons-main-color);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--white-color);
+    }
+  }
 }
 .profession {
   margin: 0 auto 16px auto;
   font-size: 16px;
   line-height: 1.19;
-}
-.team-social-link {
-  background-color: var(--white-color);
-  color: var(--social-icons-main-color);
-}
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
 }

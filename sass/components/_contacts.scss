@@ -1,42 +1,46 @@
-.contacts-header {
-  color: var(--main-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.contacts {
+  &-header {
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &-icon1 {
+      transition-duration: 0ms;
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+    &-icon2 {
+      transition-duration: 0ms;
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+    }
+  }
+  &-footer {
+    color: var(--special-footer-text-color);
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &-fonts {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  }
 }
-.contacts-header:hover,
-.contacts-header:focus {
-  color: var(--accent-color);
-}
-.contacts-footer {
-  color: var(--special-footer-text-color);
-  letter-spacing: 0.02em;
-}
-.contacts-footer:hover,
-.contacts-footer:focus {
-  color: var(--accent-color);
-}
-.footer-contacts-fonts {
-  font-size: 14px;
-  line-height: 1.7;
-}
-.office-adress {
-  color: var(--white-color);
-}
-.office-adress:hover,
-.office-adress:focus {
-  color: var(--accent-color);
-}
-.contacts-header-icon1 {
-  transition-duration: 0ms;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-.contacts-header-icon2 {
-  transition-duration: 0ms;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
+.office {
+  &-adress {
+    color: var(--white-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
 }
