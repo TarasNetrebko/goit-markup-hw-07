@@ -30,17 +30,22 @@
     line-height: 1.7;
   }
 }
-.pacu-icon {
-  &-1::before {
-    background-image: url('../images/pacu-icon-1.svg');
-  }
-  &-2::before {
-    background-image: url('../images/pacu-icon-2.svg');
-  }
-  &-3::before {
-    background-image: url('../images/pacu-icon-3.svg');
-  }
-  &-4::before {
-    background-image: url('../images/pacu-icon-4.svg');
+//.pacu-icon {
+//  &-1::before {
+//    background-image: url('../images/pacu-icon-1.svg');
+//  }
+//  &-2::before {
+//    background-image: url('../images/pacu-icon-2.svg');
+//  }
+//  &-3::before {
+//    background-image: url('../images/pacu-icon-3.svg');
+//  }
+//  &-4::before {
+//    background-image: url('../images/pacu-icon-4.svg');
+//  }
+//}
+@each $icon in pacu-icon-1, pacu-icon-2, pacu-icon-3, pacu-icon-4 {
+  .#{$icon}::before {
+    background-image: url('../images/#{$icon}.svg');
   }
 }
