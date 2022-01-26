@@ -1,0 +1,21 @@
+//BASE
+@import './base/common';
+@import './base/reset';
+//COMPONENTS
+@import './components/container';
+@import './components/contacts';
+@import './components/filter';
+@import './components/modal';
+@import './components/section-settings';
+//LAYOUT
+@import './layout/customers';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/our-focus';
+@import './layout/paculiarities';
+@import './layout/portfolio';
+@import './layout/team';
+//UTILS
+@import './utils/hidden';
+@import './utils/vars';

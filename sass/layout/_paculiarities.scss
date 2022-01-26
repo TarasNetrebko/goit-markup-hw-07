@@ -1,0 +1,43 @@
+.paculiarities-section {
+  padding-bottom: 0;
+}
+.paculiarities-list {
+  display: flex;
+  justify-content: center;
+}
+.paculiarities-item {
+  width: 270px;
+}
+.paculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
+.paculiarities-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pacu-icon-1::before {
+  background-image: url('../images/pacu-icon-1.svg');
+}
+.pacu-icon-2::before {
+  background-image: url('../images/pacu-icon-2.svg');
+}
+.pacu-icon-3::before {
+  background-image: url('../images/pacu-icon-3.svg');
+}
+.pacu-icon-4::before {
+  background-image: url('../images/pacu-icon-4.svg');
+}
+
+.paculiarities-title {
+  margin-bottom: 10px;
+}
+.paculiarities-text {
+  line-height: 1.7;
+}
