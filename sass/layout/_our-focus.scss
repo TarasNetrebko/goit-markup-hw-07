@@ -1,19 +1,19 @@
 .our-focus {
-  &-title {
+  &__title {
     margin-bottom: 50px;
   }
-  &-list {
+  &__list {
     display: flex;
   }
-  &-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 .focus {
-  &-item-thumb {
+  &__thumb {
     position: relative;
   }
-  &-disc-box {
+  &__disc-box {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -24,7 +24,7 @@
 
     background-color: rgba(47, 48, 58, 0.8);
   }
-  &-pic-disc {
+  &__disc {
     color: var(--white-color);
   }
 }

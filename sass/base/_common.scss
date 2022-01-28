@@ -2,8 +2,7 @@ body {
   background-color: var(--white-color);
   color: var(--main-text-color);
   font-family: Roboto, sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  @include font(14px, null, null, 0.03em);
 }
 * {
   transition-property: background-color, transform, box-shadow, color, opacity, visibility, border;
@@ -31,62 +30,15 @@ textarea:focus {
 }
 .upper-text {
   text-align: start;
-  font-weight: 700;
-  line-height: 1.14;
+  @include font(null, 700, 1.14, null);
   text-transform: uppercase;
-}
-.social {
-  &-list {
-    display: flex;
-    justify-content: center;
-  }
-  &-icon {
-    transition-duration: 0ms;
-    width: 20px;
-    height: 20px;
-  }
-  &-item {
-    & + & {
-      margin-left: 10px;
-    }
-  }
-  &-link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-//LOGO
-
-.logo {
-  color: var(--logo-main-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  &-header {
-    margin-right: 93px;
-  }
-  &-footer {
-    display: block;
-    margin-bottom: 20px;
-
-    color: var(--white-color);
-  }
-  &-accent {
-    color: var(--accent-color);
-  }
 }
 
 //LIST
 
 .list {
   list-style: none;
-  &-title {
+  &__title {
     margin: 0 auto;
     color: var(--secondary-text-color);
   }
@@ -98,19 +50,3 @@ textarea:focus {
 }
 
 //BUTTONS
-
-.btn {
-  &-primary {
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
-    border: none;
-  }
-  &-secondary {
-    border: 1px solid transparent;
-
-    color: var(--secondary-text-color);
-    background-color: var(--secondary-background-color);
-    cursor: pointer;
-  }
-}

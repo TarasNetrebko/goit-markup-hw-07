@@ -1,12 +1,10 @@
 .paculiarities {
-  &-section {
-    padding-bottom: 0;
-  }
-  &-list {
+  padding-bottom: 0;
+  &__list {
     display: flex;
     justify-content: center;
   }
-  &-item {
+  &__item {
     width: 270px;
     &:not(:last-child) {
       margin-right: 30px;
@@ -23,27 +21,13 @@
       background-position: center;
     }
   }
-  &-title {
+  &__title {
     margin-bottom: 10px;
   }
-  &-text {
+  &__text {
     line-height: 1.7;
   }
 }
-//.pacu-icon {
-//  &-1::before {
-//    background-image: url('../images/pacu-icon-1.svg');
-//  }
-//  &-2::before {
-//    background-image: url('../images/pacu-icon-2.svg');
-//  }
-//  &-3::before {
-//    background-image: url('../images/pacu-icon-3.svg');
-//  }
-//  &-4::before {
-//    background-image: url('../images/pacu-icon-4.svg');
-//  }
-//}
 @each $icon in pacu-icon-1, pacu-icon-2, pacu-icon-3, pacu-icon-4 {
   .#{$icon}::before {
     background-image: url('../images/#{$icon}.svg');

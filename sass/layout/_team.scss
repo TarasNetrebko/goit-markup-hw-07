@@ -1,12 +1,10 @@
 .team {
-  &-section {
-    background-color: var(--secondary-background-color);
-  }
-  &-list {
+  background-color: var(--secondary-background-color);
+  &__list {
     display: flex;
     margin-top: 50px;
   }
-  &-card {
+  &__card {
     box-shadow: var(--card-shadow);
     &:not(:last-child) {
       margin-right: 30px;
@@ -25,11 +23,9 @@
   &member {
     margin-bottom: 10px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(16px, 500, 1.19, null);
   }
-  &-social-link {
+  &__social-link {
     background-color: var(--white-color);
     color: var(--social-icons-main-color);
     &:hover,
@@ -41,6 +37,5 @@
 }
 .profession {
   margin: 0 auto 16px auto;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, null, 1.19, null);
 }

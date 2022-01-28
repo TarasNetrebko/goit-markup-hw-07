@@ -3,12 +3,10 @@
   margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
-  &-title {
+  &__title {
     text-align: center;
 
     color: var(--secondary-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(36px, 700, 1.17, null);
   }
 }

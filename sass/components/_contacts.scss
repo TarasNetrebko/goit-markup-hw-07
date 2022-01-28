@@ -1,21 +1,18 @@
 .contacts {
   &-header {
     color: var(--main-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(14px, 500, 1.14, 0.02em);
     &:hover,
     &:focus {
       color: var(--accent-color);
     }
-    &-icon1 {
+    &__icon1 {
       transition-duration: 0ms;
       width: 16px;
       height: 12px;
       margin-right: 10px;
     }
-    &-icon2 {
+    &__icon2 {
       transition-duration: 0ms;
       width: 10px;
       height: 16px;
@@ -29,9 +26,8 @@
     &:focus {
       color: var(--accent-color);
     }
-    &-fonts {
-      font-size: 14px;
-      line-height: 1.7;
+    &__fonts {
+      @include font(14px, null, 1.7, null);
     }
   }
 }

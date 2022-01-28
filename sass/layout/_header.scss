@@ -1,12 +1,10 @@
 .header {
-  &-section {
-    border-bottom: 1px solid #ececec;
-  }
-  &-flex {
+  border-bottom: 1px solid #ececec;
+  &__flex {
     display: flex;
     align-items: center;
   }
-  &-contacts {
+  &__contacts {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -16,13 +14,17 @@
       padding-top: 32px;
       padding-bottom: 32px;
     }
-    & .header-list-item + .header-list-item {
+    & .header__item + .header__item {
       margin-left: 30px;
     }
   }
 }
+.navigation {
+  display: flex;
+  align-items: center;
+}
 .site-nav {
-  &-flex {
+  &--flex {
     display: flex;
   }
   & .link {
@@ -32,10 +34,7 @@
     padding-bottom: 32px;
 
     color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(14px, 500, 1.14, 0.02em);
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -56,11 +55,7 @@
       }
     }
   }
-  & .list-item:not(:last-child) {
+  & .list__item:not(:last-child) {
     margin-right: 50px;
   }
-}
-.navigation {
-  display: flex;
-  align-items: center;
 }

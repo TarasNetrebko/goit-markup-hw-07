@@ -1,15 +1,15 @@
 .customers {
-  &-list {
+  &__list {
     display: flex;
     justify-content: center;
   }
-  &-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 30px;
   }
-  &-title {
+  &__title {
     margin-bottom: 50px;
   }
-  &-link {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
       border-color: var(--accent-color);
     }
   }
-  &-icon {
+  &__icon {
     transition-duration: 1ms;
     width: 106px;
     height: 60px;
