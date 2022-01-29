@@ -5,15 +5,6 @@
 //BASE
 @import './base/reset';
 @import './base/common';
-//LAYOUT
-@import './layout/header';
-@import './layout/hero';
-@import './layout/paculiarities';
-@import './layout/our-focus';
-@import './layout/team';
-@import './layout/customers';
-@import './layout/footer';
-@import './layout/portfolio';
 //COMPONENTS
 @import './components/section-settings';
 @import './components/container';
@@ -23,3 +14,12 @@
 @import './components/contacts';
 @import './components/filter';
 @import './components/modal';
+//LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/paculiarities';
+@import './layout/our-focus';
+@import './layout/team';
+@import './layout/customers';
+@import './layout/footer';
+@import './layout/portfolio';
